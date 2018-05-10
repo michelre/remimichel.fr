@@ -1,0 +1,65 @@
+/* https://dribbble.com/shots/3127747-Personal-Website-Design */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 100;
+    src: url('fonts/Roboto/Roboto-Thin.ttf');
+}
+
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Roboto/Roboto-Light.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: url('fonts/Roboto/Roboto-Bold.ttf');
+}
+
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+}
+
+.menu {
+    min-height: 100%;
+    background: #f3f3f3;
+    width: 250px;
+    box-shadow: 1px 0 5px 1px #a9a9a9;
+    padding: 30px 10px;
+}
+
+.menu-content {
+    position: sticky;
+    top: 30px;
+}
+
+.menu-content h1, .menu-content h2 {
+    margin: 0;
+    font-weight: normal;
+}
+
+.content {
+    width: calc(100% - 250px);
+    margin-left: 4px;
+}
+
+.header {
+    background-color: #e6e9e9;
+    height: 400px;
+}
+
+.skills {
+    height: 400px;
+}
