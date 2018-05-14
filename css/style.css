@@ -1,5 +1,4 @@
 /* https://dribbble.com/shots/3127747-Personal-Website-Design */
-
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
@@ -41,7 +40,7 @@ html, body {
     text-transform: uppercase;
     font-weight: normal;
     position: relative;
-    margin: 0;
+    margin: 0 0 50px 0;
 }
 
 .section-title::after {
@@ -62,17 +61,139 @@ html, body {
 
 .section {
     padding: 50px;
-    min-height: 500px;
+}
+
+.text-blue {
+    color: #92A1E2;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mb-5 {
+    margin-bottom: 5px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-35 {
+    margin-bottom: 35px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-3 {
+    margin-top: 3px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.mr-50 {
+    margin-right: 50px;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.font-size-tiny {
+    font-size: 0.7rem;
+}
+
+.line-height-1-5 {
+    line-height: 1.5;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}
+
+.section-gray {
+    background: #e6e9e9;
+}
+
+.justify-content-between{
+    justify-content: space-between;
+}
+
+.level-bar {
+    position: absolute;
+    width: 100%;
+    background: #92A1E2;
+    height: 5px;
+    margin-top: 12px;
+}
+
+.level-bar::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background: #3871fd;
+}
+
+.level-bar::before {
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.level-90::after {
+    width: 90%;
+}
+
+.level-90::before {
+    content: "90%";
+}
+
+.level-80::after {
+    width: 80%;
+}
+
+.level-80::before {
+    content: "80%";
+}
+
+.level-70::after {
+    width: 80%;
+}
+
+.level-70::before {
+    content: "70%";
+}
+
+.link-unstyled{
+    text-decoration: none;
 }
 
 /*** MENU ***/
 
 .menu {
     min-height: 100vh;
+    min-width: 250px;
     background: #f3f3f3;
-    width: 250px;
     box-shadow: 1px 0 5px 1px #a9a9a9;
     padding: 30px 10px;
+    box-sizing: border-box;
 }
 
 .menu-content {
@@ -86,11 +207,11 @@ html, body {
 }
 
 .menu-content h1 {
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .menu-content h2 {
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .menu {
@@ -138,22 +259,118 @@ html, body {
 }
 
 .content {
-    width: calc(100% - 250px);
+    width: 100%;
     margin-left: 4px;
 }
 
 .header {
     background-color: #e6e9e9;
     height: 400px;
+    display: flex;
+}
+
+.header > p {
+    margin: auto 0 0 auto;
+    max-width: 500px;
+    line-height: 1.8;
+    padding: 20px;
 }
 
 /*** SKILLS ***/
 
-.section-skills {
+.section-skills .skills {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.section-skills ul {
+    width: 45%;
+    margin-right: 50px;
+}
+
+.section-skills ul:nth-child(2) {
+    margin-right: 0;
+}
+
+.section-skills ul li{
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+@media screen and (max-width: 854px) {
+    .section-skills ul {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+
+.section-experience {
 
 }
 
-.section-experience {
-    background: #e6e9e9;
+.timeline {
+    position: relative;
+    width: 2px;
+    height: 350px;
+    background-color: #a9a9a9;
+    margin-left: 50px;
+}
+
+.graduation {
+    position: absolute;
+    background: url('../assets/img/graduation.svg'), white no-repeat center;
+    background-size: 50px;
+    width: 50px;
+    height: 50px;
+    left: -25px;
+}
+
+.master{
+    top: 30px;
+}
+
+.license{
+    top: 120px;
+}
+
+.dut{
+    top: 230px;
+}
+
+.tooltip{
+    position: absolute;
+    width: 230px;
+    height: 50px;
+    background: #f3f3f3;
+    left: 75px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+
+.tooltip::before{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: #f3f3f3;
+    left: -5px;
+    top: 20px;
+    transform: rotate(45deg);
+}
+
+.year {
+    position: absolute;
+    left: -50px;
+    top: 15px;
+}
+
+.contact-info {
+    width: 300px;
+}
+
+.section-contact .info {
+    max-width: 300px;
 }
 
