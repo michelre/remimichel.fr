@@ -347,6 +347,7 @@ html, body {
     left: 75px;
     padding: 7px;
     box-sizing: border-box;
+    border-radius: 2px;
 }
 
 .tooltip::before{
@@ -358,6 +359,7 @@ html, body {
     left: -5px;
     top: 20px;
     transform: rotate(45deg);
+    border-radius: 2px;
 }
 
 .year {
