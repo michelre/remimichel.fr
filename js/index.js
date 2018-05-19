@@ -1,3 +1,6 @@
+import 'zenscroll';
+import Quill from 'quill';
+
 const sections = Array.from(document.querySelectorAll('.menu li > a')).map(d => {
   const anchor = d.getAttribute('href');
   return {anchor, element: document.querySelector(anchor)};
@@ -5,7 +8,7 @@ const sections = Array.from(document.querySelectorAll('.menu li > a')).map(d => 
 
 let timerScroll = null;
 window.addEventListener('scroll', (e) => {
-  if(timerScroll !== null){
+  if (timerScroll !== null) {
     clearTimeout(timerScroll);
   }
   timerScroll = setTimeout(() => {
@@ -15,7 +18,22 @@ window.addEventListener('scroll', (e) => {
 
 window.addEventListener('load', () => {
   scrollEndAction();
+  initQuill();
 });
+
+function initQuill() {
+  var options = {
+    debug: 'info',
+    modules: {
+      toolbar: [
+        {size: ['small', false, 'large', 'huge']}
+      ]
+    },
+    placeholder: 'Votre message...',
+    theme: 'snow'
+  };
+  const editor = new Quill('#editor', options);
+}
 
 function scrollEndAction() {
   const currentPosition = document.documentElement.scrollTop;

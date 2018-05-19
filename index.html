@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/style.scss"/>
+  <link rel="stylesheet" href="node_modules/quill/dist/quill.snow.css"/>
   <title>Rémi Michel - Développeur et formateur web sur Grenoble</title>
 </head>
 <body>
@@ -242,7 +243,24 @@
           </div>
 
         </div>
-        <div></div>
+        <div>
+          <form>
+            <div class="mb-10">
+              <input type="text" class="form-control" placeholder="Votre nom" />
+            </div>
+            <div class="mb-10">
+              <input type="text" class="form-control" placeholder="Votre email" />
+            </div>
+            <div class="mb-10">
+              <input type="text" class="form-control" placeholder="Sujet" />
+            </div>
+            <div class="mb-10">
+              <div id="editor">
+                <div id="toolbar"></div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
 
@@ -250,8 +268,6 @@
   </div>
 </div>
 
-<!--<script type="application/javascript" src="js/zenscroll-min.js"></script>
-<script type="application/javascript" src="js/script.js"></script>-->
-<script type="application/javascript" src="dist/build.js"></script>
+<script type="application/javascript" src="js/index.js"></script>
 </body>
 </html>

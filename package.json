@@ -1,0 +1,34 @@
+{
+  "name": "remimichel.fr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "parcel watch index.html",
+    "build": "parcel build index.html",
+    "serve": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/michelre/remimichel.fr.git"
+  },
+  "keywords": [],
+  "author": "Remi Michel <remi.michel38@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/michelre/remimichel.fr/issues"
+  },
+  "homepage": "https://github.com/michelre/remimichel.fr#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "node-mailjet": "^3.2.1",
+    "parcel-bundler": "^1.8.1",
+    "quill": "^1.3.6",
+    "zenscroll": "^4.0.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}
