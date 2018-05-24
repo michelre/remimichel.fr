@@ -8,11 +8,13 @@
   <title>Rémi Michel - Développeur et formateur web sur Grenoble</title>
 </head>
 <body>
+<div class="header">
+  <h1>Rémi Michel</h1>
+  <h2 class="text-blue">Développeur & formateur web</h2>
+</div>
 <div class="container">
   <div class="menu">
     <div class="menu-content">
-      <h1>Rémi Michel</h1>
-      <h2 class="subtitle">Développeur & formateur web</h2>
       <ul class="list-unstyled">
         <li>
           <a href="#bio">
@@ -42,7 +44,7 @@
     </div>
   </div>
   <div class="content">
-    <div class="header" id="bio">
+    <div class="bio" id="bio">
       <p>Je suis <b class="text-blue">développeur</b> et <b class="text-blue">formateur</b> dans le monde du web.
         Diplômé d'un Master MIAGE, je me suis très vite orienté
         vers le développement frontend et particulièrement vers les technologies JavaScript et CSS.
@@ -107,8 +109,10 @@
             </div>
             <div class="mt-10 line-height-1-5">
               J'accompagne quelques étudiants qui souhaitent se former au développement web. Openclassroom à mis en
-              place différents <a class="text-blue link-unstyled" href="https://openclassrooms.com/paths" target="_blank">parcours de formations</a> qui permettent à des étudiants par le biais de projets de se
-              former au métier du développement. J'intervient sur tous les projets qui touchent au développement web
+              place différents <a class="text-blue link-unstyled" href="https://openclassrooms.com/paths"
+                                  target="_blank">parcours de formations</a> qui permettent à des étudiants par le biais
+              de projets de se
+              former au métier du développement. J'interviens sur tous les projets qui touchent au développement web
               (Intégration HTML et CSS, JavaScript, PHP et Symfony).
           </li>
           <li class="mb-15">
@@ -172,7 +176,8 @@
             </div>
             <div class="mt-10 line-height-1-5">
               Au sein d'une équipe de 3 développeurs, j'ai pris part au développement d'un outil de statistiques qui
-              permettait à SFR d'étudier les données d'utilisation de ses applications mobiles. L'ensemble de la solution,
+              permettait à SFR d'étudier les données d'utilisation de ses applications mobiles. L'ensemble de la
+              solution,
               déjà existante était développée en PHP, sans framework. L'application était vieillisante mais il fallait
               continuer à développer de nouvelles fonctionnalités
             </div>
@@ -210,10 +215,68 @@
     </div>
     <div class="section section-gray section-publication" id="publication">
       <h1 class="section-title">Publications</h1>
+      <div class="d-flex flex-wrap">
+        <a
+          href="https://www.codementor.io/michelre/functional-javascript-why-i-prefer-using-ramda-over-lodash-or-underscore-dzovysq11"
+          target="_blank"
+          class="publication publication-codementor">
+          <div class="publication-cover ramda-over-lodash"></div>
+          <div class="ramda-over-lodash"></div>
+          <div class="publication-description">
+            Une comparaison entre Lodash et Ramda, deux librairies qui permettent d'utiliser les opérateurs issus de la
+            programmation fonctionnelle en JavaScript.
+          </div>
+        </a>
+        <a href="https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv" target="_blank"
+           class="publication publication-codementor">
+          <div class="publication-cover curryfication-javascript"></div>
+          <div class="publication-description">
+            La curryfication est un principe important de la programmation fonctionnelle. Explication de ce que c'est et
+            comment l'utiliser à bon escient!
+          </div>
+        </a>
+        <a href="https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj" target="_blank"
+           class="publication publication-codementor">
+          <div class="publication-cover function-composition-in-js"></div>
+          <div class="function-composition-in-js"></div>
+          <div class="publication-description">
+            Issue de la programmtion fonctionnelle, La composition de fonction permet de combiner plusieurs
+            fonctions afin de produire une fonction plus complexe.
+          </div>
+        </a>
+        <a href="https://www.codementor.io/michelre/parcel-the-webpack-successor-fsmf6ow9y" target="_blank"
+           class="publication publication-codementor">
+          <div class="publication-cover parcel"></div>
+          <div class="parcel"></div>
+          <div class="publication-description">
+            Parcel est un module bundler au même titre que Webpack qui allie simplicité et rapidité. Alors Parcel
+            peut-il être le successeur de Webpack? A vous de faire une idée!
+          </div>
+        </a>
+        <a href="https://www.codementor.io/michelre/using-box-shadow-to-construct-a-border-ex0rpxvng" target="_blank"
+           class="publication publication-codementor">
+          <div class="publication-cover css-box-shadow"></div>
+          <div class="parcel"></div>
+          <div class="publication-description">
+            Un article dédié au CSS qui demistifie la création de bordures en utilisant la propriété box-shadow.
+          </div>
+        </a>
+        <a
+          href="https://openclassrooms.com/courses/developpez-vos-applications-web-avec-angularjs/qu-est-ce-qu-angularjs"
+          target="_blank"
+          class="publication publication-oc">
+          <div class="publication-cover angularjs"></div>
+          <div class="parcel"></div>
+          <div class="publication-description">
+            Un cours qui permet de se former à AngularJS en développant une application simple. Retour sur les notions
+            importantes du framework et son écosystème.
+          </div>
+        </a>
+      </div>
     </div>
     <div class="section section-contact" id="contact">
       <h1 class="section-title">Contact</h1>
-      <div class="d-flex">
+      <div class="d-flex flex-wrap-reverse">
         <div class="info">
           <div class="mb-35">
             <div class="d-flex align-items-center contact-info mb-10">
@@ -232,32 +295,35 @@
           </div>
           <div class="d-flex">
             <a href="#" class="link-unstyled mr-50">
-              <img src="assets/img/github-icon.svg" width="25" height="25" />
+              <img src="assets/img/github-icon.svg" width="25" height="25"/>
             </a>
             <a href="#" class="link-unstyled mr-50">
-              <img src="assets/img/linkedin-icon.svg" width="25" height="25" />
+              <img src="assets/img/linkedin-icon.svg" width="25" height="25"/>
             </a>
             <a href="#" class="link-unstyled mr-50">
-              <img src="assets/img/twitter-icon.svg" width="25" height="25" />
+              <img src="assets/img/twitter-icon.svg" width="25" height="25"/>
             </a>
           </div>
 
         </div>
-        <div>
+        <div class="contact-form flex-grow">
           <form>
             <div class="mb-10">
-              <input type="text" class="form-control" placeholder="Votre nom" />
+              <input name="name" type="text" class="form-control" placeholder="Votre nom"/>
             </div>
             <div class="mb-10">
-              <input type="text" class="form-control" placeholder="Votre email" />
+              <input name="mail" type="text" class="form-control" placeholder="Votre email"/>
             </div>
             <div class="mb-10">
-              <input type="text" class="form-control" placeholder="Sujet" />
+              <input name="subject" type="text" class="form-control" placeholder="Sujet"/>
             </div>
             <div class="mb-10">
               <div id="editor">
                 <div id="toolbar"></div>
               </div>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="form-control btn btn-primary">Envoyer</button>
             </div>
           </form>
         </div>

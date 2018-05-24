@@ -17,8 +17,8 @@ app.post('/api/send-mail', (req, res) => {
   mailjet
     .post('send')
     .request({
-      FromEmail: body.from_mail,
-      FromName: body.from_name,
+      FromEmail: body.mail,
+      FromName: body.name,
       Subject: body.subject,
       'Html-part': body.content,
       Recipients: [{'Email': 'remi.michel38@gmail.com'}]

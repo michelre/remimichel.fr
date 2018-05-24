@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/michelre/remimichel.fr#readme",
   "dependencies": {
+    "axios": "^0.18.0",
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "node-mailjet": "^3.2.1",

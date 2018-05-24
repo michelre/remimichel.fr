@@ -1,0 +1,102 @@
+.publication {
+  width: 30%;
+  height: 250px;
+  text-decoration: none;
+  color: inherit;
+
+  &:not(:last-child) {
+    margin-right: 20px;
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .publication-cover {
+    width: 100%;
+    height: 50%;
+    box-sizing: border-box;
+    background-size: cover !important;
+
+    &.curryfication-javascript {
+      background: url('../assets/img/currying-in-javascript.png') no-repeat center;
+    }
+
+    &.ramda-over-lodash {
+      background: url('../assets/img/ramda-over-lodash.png') no-repeat center;
+    }
+
+    &.function-composition-in-js {
+      background: url('../assets/img/function-composition-in-js.jpg') no-repeat center;
+    }
+
+    &.parcel {
+      background: url('../assets/img/parcel.png') no-repeat center;
+    }
+
+    &.css-box-shadow {
+      background: url('../assets/img/css-box-shadow.png') no-repeat center;
+    }
+
+    &.angularjs {
+      background: url('../assets/img/angularjs.jpg') no-repeat center;
+    }
+  }
+
+  .publication-description {
+    padding: 10px;
+    height: 50%;
+    background: white;
+  }
+
+  &.publication-codementor {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../assets/img/codementor-logo.png') no-repeat center;
+      background-size: cover;
+      width: 75px;
+      height: 35px;
+    }
+  }
+
+  &.publication-oc {
+    position: relative;
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: url('../assets/img/oc.svg') no-repeat center, white;
+      background-size: 50px;
+      width: 75px;
+      height: 35px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .publication {
+    width: 100%;
+    margin-right: 0 !important;
+
+    .publication-cover {
+      height: 60% !important;
+    }
+
+    .publication-description {
+      height: 40% !important;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .publication {
+    width: 45%;
+  }
+}
