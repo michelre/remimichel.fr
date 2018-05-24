@@ -42,12 +42,11 @@ function initQuill() {
 function scrollEndAction() {
   const currentPosition = document.documentElement.scrollTop;
   const currentSection = sections.find(({element}) => element.offsetTop >= currentPosition) || sections[sections.length - 1];
-  Array.from(document.querySelectorAll('.menu a')).map(e => {
+  /*Array.from(document.querySelectorAll('.menu a')).map(e => {
     e.style.color = '#ABABAD';
-    e.querySelector('span').style.width = '20px';
   });
   document.querySelector(`.menu a[href="${currentSection.anchor}"]`).style.color = 'black';
-  document.querySelector(`.menu a[href="${currentSection.anchor}"] > span`).style.width = '40px';
+  document.querySelector(`.menu a[href="${currentSection.anchor}"] > span`).style.width = '40px';*/
   history.replaceState(undefined, undefined, currentSection.anchor)
 }
 

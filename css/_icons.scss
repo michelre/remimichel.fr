@@ -1,0 +1,43 @@
+@import "fonts";
+
+.ic {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ic-contact:before {
+  content: "\e900";
+}
+.ic-publication:before {
+  content: "\e901";
+}
+.ic-school:before {
+  content: "\e902";
+}
+.ic-work:before {
+  content: "\e903";
+}
+.ic-skills:before {
+  content: "\e904";
+}
+.ic-bio:before {
+  content: "\e905";
+}
+
+.ic-2x {
+  font-size: 2rem;
+}
+
+.ic-3x {
+  font-size: 3rem;
+}

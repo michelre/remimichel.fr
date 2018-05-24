@@ -1,0 +1,18 @@
+$orientations: top right bottom left;
+$orientations-min: t r b l;
+
+@for $i from 1 to (length($orientations) + 1){
+  @for $j from 1 to 51 {
+    .m#{nth($orientations-min, $i)}-#{$j}{
+      margin-#{nth($orientations, $i)}: #{$j}px;
+    }
+  }
+}
+
+@for $i from 1 to (length($orientations) + 1){
+  @for $j from 1 to 51 {
+    .p#{nth($orientations-min, $i)}-#{$j}{
+      padding-#{nth($orientations, $i)}: #{$j}px;
+    }
+  }
+}
