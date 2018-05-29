@@ -1,0 +1,57 @@
+.timeline {
+  position: relative;
+  width: 2px;
+  height: 350px;
+  background-color: #a9a9a9;
+  margin-left: 100px;
+}
+
+.graduation {
+  position: absolute;
+  background: url('../assets/img/graduation.svg') no-repeat center, white no-repeat center;
+  background-size: 50px;
+  width: 50px;
+  height: 50px;
+  left: -25px;
+}
+
+.master {
+  top: 30px;
+}
+
+.license {
+  top: 120px;
+}
+
+.dut {
+  top: 230px;
+}
+
+.tooltip {
+  position: absolute;
+  width: 230px;
+  height: 50px;
+  background: #f3f3f3;
+  left: 75px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 2px;
+}
+
+.tooltip::before {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: #f3f3f3;
+  left: -5px;
+  top: 20px;
+  transform: rotate(45deg);
+  border-radius: 2px;
+}
+
+.year {
+  position: absolute;
+  left: -50px;
+  top: 15px;
+}

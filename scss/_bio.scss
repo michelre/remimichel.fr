@@ -1,0 +1,12 @@
+.bio {
+  background-color: #e6e9e9;
+  height: 400px;
+  display: flex;
+}
+
+.bio > p {
+  margin: auto 0 0 auto;
+  max-width: 500px;
+  line-height: 1.8;
+  padding: 20px;
+}

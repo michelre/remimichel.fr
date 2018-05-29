@@ -4,17 +4,15 @@
   width: $menu-width;
   background: #f3f3f3;
   box-sizing: border-box;
-}
-
-@media screen and (max-width: 767px) {
-  .menu {
-    display: none;
-  }
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
 .menu-content {
+  width: $menu-width;
   position: sticky;
-  top: 0
+  top: 0;
 }
 
 .menu ul {
@@ -23,9 +21,10 @@
 }
 
 .menu ul > li {
+  width: 100%;
   padding: 15px 5px;
-  font-size: 0.8rem;
-  border-bottom: 1px solid #ABABAD;
+  font-size: 0.7rem;
+  box-sizing: border-box;
 }
 
 .menu a {
@@ -37,9 +36,23 @@
 }
 
 .menu li:target {
-  color: black;
+  color: blue;
 }
 
 .menu i {
   display: block;
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    width: 100%;
+  }
+
+  .menu-content {
+    width: 100% !important;
+  }
+
+  .menu ul {
+    flex-direction: row;
+  }
 }

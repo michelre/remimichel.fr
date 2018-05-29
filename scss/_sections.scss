@@ -1,0 +1,27 @@
+.section-title {
+  text-transform: uppercase;
+  font-weight: normal;
+  position: relative;
+  margin: 0 0 50px 0;
+}
+
+.section-title::before {
+  position: absolute;
+  bottom: -10px;
+  content: '';
+  height: 2px;
+  width: 100px;
+  background: #92A1E2;
+  left: 0;
+}
+
+.section-title::after{
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  left: 100px;
+  bottom: -12.25px;
+  border: 1px solid #92A1E2;
+}

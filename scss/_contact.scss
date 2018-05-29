@@ -1,0 +1,22 @@
+.contact-info {
+  width: 300px;
+}
+
+.section-contact .info {
+  max-width: 300px;
+}
+
+.section-contact .contact-form {
+  max-width: calc(100% - 300px);
+}
+
+@media screen and (max-width: 767px) {
+  .section-contact .contact-form {
+    max-width: 100%;
+    margin-bottom: 35px;
+  }
+}
+
+.section-contact #editor {
+  min-height: 120px;
+}

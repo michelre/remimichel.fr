@@ -1,0 +1,20 @@
+.btn {
+  width: inherit;
+
+  &.btn-primary {
+    background: #bcbcbc;
+    border-color: #bcbcbc;
+    color: white;
+    transition: all .15s ease-in-out;
+
+    &:hover {
+      background: darken(#bcbcbc, 15%);
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  &.btn {
+    width: 100%;
+  }
+}

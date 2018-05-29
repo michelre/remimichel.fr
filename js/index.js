@@ -41,12 +41,9 @@ function initQuill() {
 
 function scrollEndAction() {
   const currentPosition = document.documentElement.scrollTop;
-  const currentSection = sections.find(({element}) => element.offsetTop >= currentPosition) || sections[sections.length - 1];
-  /*Array.from(document.querySelectorAll('.menu a')).map(e => {
-    e.style.color = '#ABABAD';
-  });
-  document.querySelector(`.menu a[href="${currentSection.anchor}"]`).style.color = 'black';
-  document.querySelector(`.menu a[href="${currentSection.anchor}"] > span`).style.width = '40px';*/
+  const currentSectionIndex = getNearestSectionIndex(currentPosition, sections.map(({ element }) => element.offsetTop));
+  const currentSection = sections[currentSectionIndex];
+  displayCurrentItemMenu(currentSection);
   history.replaceState(undefined, undefined, currentSection.anchor)
 }
 
@@ -55,15 +52,35 @@ const sendButton = document.querySelector('.contact-form form button');
 
 sendButton.addEventListener('click', (e) => {
   let formData = Object.assign({}, getInputsData(), getEditorData());
+  changeSendButtonText(true);
   sendAction(formData)
-    .then(resp => console.log(resp))
-    .catch(err => console.log(err));
+    .then(resp => {
+      changeSendButtonText(false);
+      showAlert(true);
+    })
+    .catch(err => {
+      changeSendButtonText(false);
+      showAlert(false);
+    });
   e.preventDefault();
 });
 
+const getNearestSectionIndex = (currentPosition, sectionPositions) => {
+  const deltaPositions = sectionPositions.map((position, idx) => ({ delta: Math.abs(currentPosition - position), idx }));
+  const sortedPositions = deltaPositions.sort((a, b) => a.delta - b.delta)
+  return sortedPositions[0].idx;
+};
+
+const displayCurrentItemMenu = (currentSection) => {
+  Array.from(document.querySelectorAll('.menu a')).map(e => {
+    e.style.color = 'black';
+  });
+  document.querySelector(`.menu a[href="${currentSection.anchor}"]`).style.color = '#92A1E2';
+};
+
 const sendAction = (formData) => {
-  return axios.post('/api/send-mail', formData)
-}
+  return axios.post('/api/send-mail', formData);
+};
 
 const getEditorData = () => {
   return {content: editor.container.firstChild.innerHTML};
@@ -78,4 +95,24 @@ const getInputFields = () => {
   const inputs = Array.from(document.querySelectorAll('.contact-form form input'));
   const fields = inputs.reduce((acc, curr) => acc.concat(curr.getAttribute('name')), []);
   return fields.filter(x => x);
+};
+
+const changeSendButtonText = (isSending) => {
+  const sendBtn = document.querySelector('.btn-send');
+  if(isSending){
+    sendBtn.textContent = 'Envoie en cours...';
+  } else {
+    sendBtn.textContent = 'Envoyer';
+  }
+}
+
+const showAlert = (isSucceeded) => {
+  const alert = document.querySelector('.alert');
+  const alertMsg = (isSucceeded) ? document.querySelector('.alert-success') : document.querySelector('.alert-error');
+  alert.style.display = 'block';
+  alertMsg.style.display = 'flex';
+  setTimeout(() => {
+    alert.style.display = 'none';
+    alertMsg.style.display = 'none';
+  }, 3000)
 };

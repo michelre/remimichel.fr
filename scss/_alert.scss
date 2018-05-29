@@ -1,0 +1,26 @@
+.alert {
+  .alert-message {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    width: 300px;
+    height: 70px;
+    z-index: 11;
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    transform: translateX(-50%);
+    border-radius: 4px;
+    padding: 10px;
+    display: none;
+    align-items: center;
+  }
+
+  .alert-error {
+    background: #ff3025;
+  }
+
+  .alert-success {
+    background: #00b100;
+  }
+}

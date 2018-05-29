@@ -1,0 +1,72 @@
+.section-skills .skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-skills ul {
+  width: 45%;
+  margin-right: 50px;
+}
+
+.section-skills ul:nth-child(2) {
+  margin-right: 0;
+}
+
+.section-skills ul li {
+  position: relative;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+@media screen and (max-width: 854px) {
+  .section-skills ul {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.level-bar {
+  position: absolute;
+  width: 100%;
+  background: #92A1E2;
+  height: 5px;
+  margin-top: 12px;
+}
+
+.level-bar::after {
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 100%;
+  background: #3871fd;
+}
+
+.level-bar::before {
+  position: absolute;
+  right: 0;
+  top: -30px;
+}
+
+.level-90::after {
+  width: 90%;
+}
+
+.level-90::before {
+  content: "90%";
+}
+
+.level-80::after {
+  width: 80%;
+}
+
+.level-80::before {
+  content: "80%";
+}
+
+.level-70::after {
+  width: 80%;
+}
+
+.level-70::before {
+  content: "70%";
+}
