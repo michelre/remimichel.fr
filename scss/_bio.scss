@@ -1,10 +1,10 @@
 .bio {
   background-color: #e6e9e9;
-  height: 400px;
-  display: flex;
+  min-height: 400px;
 
   img {
-    height: 100%;
+    max-height: 400px;
+    max-width: 100%;
   }
 }
 
