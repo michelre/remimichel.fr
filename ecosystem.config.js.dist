@@ -1,0 +1,50 @@
+module.exports = {
+  /**
+   * Application configuration section
+   * http://pm2.keymetrics.io/docs/usage/application-declaration/
+   */
+  apps : [
+
+    // First application
+    {
+      name      : 'remimichel.fr',
+      script    : 'server.js',
+      env: {
+        GMAIL_LOGIN: '',
+        GMAIL_PASS: ''
+      },
+      env_production : {
+        NODE_ENV: 'production'
+        PORT: 80,
+        GMAIL_LOGIN: '',
+        GMAIL_PASS: ''
+      }
+    }
+  ],
+
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+   */
+  deploy : {
+    production : {
+      user : 'root',
+      host : 'vps426692.ovh.net',
+      ref  : 'origin/master',
+      repo : 'https://github.com/michelre/remimichel.fr.git',
+      path : '/var/www/remimichel.fr',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env production'
+    },
+    dev : {
+      user : 'root',
+      host : 'vps426692.ovh.net',
+      ref  : 'origin/master',
+      repo : 'https://github.com/michelre/remimichel.fr.git',
+      path : '/var/www/remimichel.fr',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js --env dev',
+      env  : {
+        NODE_ENV: 'dev'
+      }
+    }
+  }
+};
