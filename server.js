@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const compression = require('compression');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -19,6 +20,7 @@ const poolConfig = {
 
 const transporter = nodemailer.createTransport(poolConfig);
 
+app.use(compression());
 app.use(bodyParser.json());
 app.use(express.static('dist'));
 

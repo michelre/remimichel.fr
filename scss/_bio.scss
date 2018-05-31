@@ -3,13 +3,16 @@
   min-height: 400px;
 
   img {
-    max-height: 400px;
+    max-height: 275px;
     max-width: 100%;
+    align-self: flex-end;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
 .bio > p {
-  margin: auto 0 0 auto;
+  margin: auto;
   max-width: 500px;
   line-height: 1.8;
   padding: 20px;
