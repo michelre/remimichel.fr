@@ -4,6 +4,10 @@
   display: flex;
 }
 
+.d-block {
+  display: block;
+}
+
 .flex-wrap {
   flex-wrap: wrap;
 }
@@ -30,6 +34,10 @@
 
 .font-weight-bold {
   font-weight: bold;
+}
+
+.font-size-normal {
+  font-size: 1rem;
 }
 
 .font-size-tiny {

@@ -5,6 +5,7 @@ const compression = require('compression');
 
 const app = express();
 const port = process.env.PORT || 3000;
+const host = process.env.HOST || '127.0.0.1';
 const {GMAIL_LOGIN, GMAIL_PASS} = process.env;
 
 const poolConfig = {
@@ -45,6 +46,6 @@ app.post('/api/send-mail', (req, res) => {
   });
 });
 
-app.listen(port, function () {
+app.listen(port, host, function () {
   console.log(`Server listening on ${port}`);
 });
