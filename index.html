@@ -1,371 +1,431 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-  <link rel="stylesheet" href="scss/style.scss"/>
-  <link rel="stylesheet" href="node_modules/quill/dist/quill.snow.css"/>
-  <title>Rémi Michel - Développeur et formateur web sur Grenoble</title>
-  <meta name="description"
-        content="Développeur et formateur web indépendant sur Grenoble. Expert des technologies frontend (HTML, JavaScript et CSS...) et backend (PHP, Symfony...)"/>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async type="application/javascript" src="https://www.googletagmanager.com/gtag/js?id=UA-120136307-1"></script>
-  <script type="application/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="scss/style.scss"/>
+    <link rel="stylesheet" href="node_modules/quill/dist/quill.snow.css"/>
+    <title>Rémi Michel - Développeur et formateur web sur Grenoble</title>
+    <meta name="description"
+          content="Développeur et formateur web indépendant sur Grenoble. Expert des technologies frontend (HTML, JavaScript et CSS...) et backend (PHP, Symfony...)"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async type="application/javascript"
+            src="https://www.googletagmanager.com/gtag/js?id=UA-120136307-1"></script>
+    <script type="application/javascript">
+      window.dataLayer = window.dataLayer || [];
 
-    gtag('config', 'UA-120136307-1');
-  </script>
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+
+      gtag('js', new Date());
+
+      gtag('config', 'UA-120136307-1');
+    </script>
 </head>
 <body>
 <div class="header">
-  <h1>Rémi Michel <span class="text-blue d-block font-size-normal">Développeur & formateur web</span></h1>
+    <h1>Rémi Michel <span class="text-blue d-block font-size-normal">Développeur & formateur web</span></h1>
 </div>
 <div class="container">
-  <div class="menu">
-    <div class="menu-content">
-      <ul class="list-unstyled text-center">
-        <li>
-          <a href="#bio" class="d-flex flex-column">
-            <i class="ic ic-bio ic-3x"></i>
-            Bio
-          </a>
-        </li>
-        <li>
-          <a href="#skills">
-            <i class="ic ic-skills ic-3x"></i>
-            Compétences
-          </a>
-        </li>
-        <li>
-          <a href="#experience">
-            <i class="ic ic-work ic-3x"></i>
-            Experiences
-          </a>
-        </li>
-        <li>
-          <a href="#education">
-            <i class="ic ic-school ic-3x"></i>
-            Formation
-          </a>
-        </li>
-        <li>
-          <a href="#publication">
-            <i class="ic ic-publication ic-3x"></i>
-            Publications
-          </a>
-        </li>
-        <li>
-          <a href="#contact">
-            <i class="ic ic-contact ic-3x"></i>
-            Contact
-          </a>
-        </li>
-      </ul>
+    <div class="menu">
+        <div class="menu-content">
+            <ul class="list-unstyled text-center">
+                <li>
+                    <a href="#bio" class="d-flex flex-column">
+                        <i class="ic ic-bio ic-3x"></i>
+                        Bio
+                    </a>
+                </li>
+                <li>
+                    <a href="#skills">
+                        <i class="ic ic-skills ic-3x"></i>
+                        Compétences
+                    </a>
+                </li>
+                <li>
+                    <a href="#experience">
+                        <i class="ic ic-work ic-3x"></i>
+                        Experiences
+                    </a>
+                </li>
+                <li>
+                    <a href="#education">
+                        <i class="ic ic-school ic-3x"></i>
+                        Formation
+                    </a>
+                </li>
+                <li>
+                    <a href="#publication">
+                        <i class="ic ic-publication ic-3x"></i>
+                        Publications
+                    </a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="ic ic-contact ic-3x"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-  </div>
-  <div class="content">
-    <div class="bio d-flex flex-wrap" id="bio">
-      <img alt="Rémi Michel - Développeur web Grenoble" src="assets/img/bio-image.png"/>
-      <p>Je suis <b class="text-blue">développeur</b> et <b class="text-blue">formateur</b> web sur la région de
-        Grenoble.
-        Diplômé d'un Master MIAGE, je me suis très vite orienté
-        vers le développement frontend et particulièrement vers les technologies JavaScript et CSS.
-        D'un naturel rigoureux, je possède un soucis du détail très important qui me permet de délivrer des produits à
-        la hauteur de vos attentes
-      </p>
-    </div>
-    <div class="section section-skills" id="skills">
-      <h2 class="section-title">Compétences</h2>
-      <div class="skills">
-        <ul class="list-unstyled">
-          <li>
-            JavaScript
-            <div class="level-bar level-90"></div>
-          </li>
-          <li>
-            React
-            <div class="level-bar level-90"></div>
-          </li>
-          <li>
-            Angular 1 & 2+
-            <div class="level-bar level-80"></div>
-          </li>
-          <li>
-            HTML / CSS
-            <div class="level-bar level-90"></div>
-          </li>
-        </ul>
-        <ul class="list-unstyled">
-          <li>
-            Bootstrap
-            <div class="level-bar level-90"></div>
-          </li>
-          <li>
-            NodeJS
-            <div class="level-bar level-90"></div>
-          </li>
-          <li>
-            PHP
-            <div class="level-bar level-70"></div>
-          </li>
-          <li>
-            Symfony
-            <div class="level-bar level-70"></div>
-          </li>
-        </ul>
-      </div>
+    <div class="content">
+        <div class="bio d-flex flex-wrap" id="bio">
+            <img alt="Rémi Michel - Développeur web Grenoble" src="assets/img/bio-image.png"/>
+            <p>Je suis <b class="text-blue">développeur</b> et <b class="text-blue">formateur</b> web sur la région de
+                Grenoble.
+                Diplômé d'un Master MIAGE, je me suis très vite orienté
+                vers le développement frontend et particulièrement vers les technologies JavaScript et CSS.
+                D'un naturel rigoureux, je possède un soucis du détail très important qui me permet de délivrer des
+                produits à
+                la hauteur de vos attentes
+            </p>
+        </div>
+        <div class="section section-skills" id="skills">
+            <h2 class="section-title">Compétences</h2>
+            <div class="skills">
+                <ul class="list-unstyled">
+                    <li>
+                        JavaScript
+                        <div class="level-bar level-90"></div>
+                    </li>
+                    <li>
+                        React
+                        <div class="level-bar level-90"></div>
+                    </li>
+                    <li>
+                        Angular 1 & 2+
+                        <div class="level-bar level-80"></div>
+                    </li>
+                    <li>
+                        HTML / CSS
+                        <div class="level-bar level-90"></div>
+                    </li>
+                </ul>
+                <ul class="list-unstyled">
+                    <li>
+                        Bootstrap
+                        <div class="level-bar level-90"></div>
+                    </li>
+                    <li>
+                        NodeJS
+                        <div class="level-bar level-90"></div>
+                    </li>
+                    <li>
+                        PHP
+                        <div class="level-bar level-70"></div>
+                    </li>
+                    <li>
+                        Symfony
+                        <div class="level-bar level-70"></div>
+                    </li>
+                </ul>
+            </div>
 
 
-    </div>
-    <div class="section section-gray section-experience" id="experience">
-      <h2 class="section-title">Expériences</h2>
-      <div class="experiences">
-        <ul class="list-unstyled">
-          <li class="mb-15">
-            <div class="d-flex align-items-center">
-              <img alt="Logo Openclassroom" src="assets/img/oc.svg" width="80"/>
-              <div class="ml-10">
-                <div class="font-weight-bold mb-5">Openclassroom - Mentor développement web</div>
-                <div>Octobre 2017 - Aujourd'hui</div>
-              </div>
+        </div>
+        <div class="section section-gray section-experience" id="experience">
+            <h2 class="section-title">Expériences</h2>
+            <div class="experiences">
+                <ul class="list-unstyled">
+                    <li class="mb-15">
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo Openclassroom" src="assets/img/rwigo-logo.jpeg" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">RWIGO - Développeur Web FullStack</div>
+                                <div>Juin 2018 - Aujourd'hui</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            Au sein d'une petite équipe, nous résolvons toute sorte de problématiques pour tout type de
+                            client (allant de la TPE à la grande structure). Nous intervenons sur tous les aspects frontend et backend.
+                            Notre stack technique est essentiellement composée de:
+                            <ul>
+                                <li>
+                                    <b>Côté frontend:</b> VueJS (pour les nouveaux projets) et AngularJS (pour les projets historiques)
+                                </li>
+                                <li>
+                                    <b>Côté backend:</b> Essentiellement du Python (Flask, SQLAlechemy) et du PHP
+                                </li>
+                            </ul>
+                            Nous prônons l'idée du sûr-mesure et de l'artisanat du code!
+                        </div>
+                    </li>
+                    <li class="mb-15">
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo Openclassroom" src="assets/img/oc.svg" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">Openclassroom - Mentor développement web</div>
+                                <div>Octobre 2017 - Aujourd'hui</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            J'accompagne quelques étudiants qui souhaitent se former au développement web. Openclassroom
+                            à mis en
+                            place différents <a class="text-blue link-unstyled" href="https://openclassrooms.com/paths"
+                                                target="_blank">parcours de formations</a> qui permettent à des
+                            étudiants par le biais
+                            de projets de se
+                            former au métier du développement. J'interviens sur tous les projets qui touchent au
+                            développement web
+                            (Intégration HTML et CSS, JavaScript, PHP et Symfony).
+                        </div>
+                    </li>
+                    <li class="mb-15">
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo Biologic" src="assets/img/biologic.png" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">Biologic - Développeur frontend (Angular 2+)</div>
+                                <div>Août 2017 - Mai 2018</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            Au sein d'une équipe de trois développeurs dédiés spécialement au développement frontend,
+                            nous avons
+                            redéveloppé une
+                            application existante développée précédemment en Delphi. L'objectif de l'application est de
+                            configurer et
+                            monitorer des tests de charge sur des batteries. L'application a été intégralement
+                            développée avec Angular
+                            2+. Nous avons paramétré Bootstrap 4 pour qu'il puisse correspondre aux spécifications
+                            fournies par le
+                            cabinet design. Plotly.js a par ailleurs été utilisé pour la partie liée aux graphiques.
+                        </div>
+                    </li>
+                    <li class="mb-15">
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo Wizbii" src="assets/img/wizbii.svg" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">Wizbii - Développeur frontend (Angular 1 & React)
+                                </div>
+                                <div>Décembre 2016 - Juillet 2017</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            En collaboration avec l'équipe backend et design, j'ai pris part à l'évolution de la
+                            plateforme <a
+                            href="https://www.wizbii.com" class="text-blue link-unstyled" target="_blank">Wizbii</a>
+                            ainsi que les produits annexes. Cela est passé par le développement d'un CMS maison avec un
+                            front en
+                            React. Par la suite nous nous sommes chargés d'enrichir la plateforme Wizbii dont le front
+                            était à
+                            l'époque développé avec Angular 1. Enfin nous avons développé une plateforme de recherche
+                            d'aides
+                            financières destinée aux jeunes. Celle-ci était développée avec React & Redux. Le travail en
+                            collaboration
+                            directe avec l'équipe design exigeait une rigueur importante au niveau de l'intégration.
+                        </div>
+                    </li>
+                    <li class="mb-15">
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo Schneider Electric" src="assets/img/schneider-electric.png" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">Schneider Electric - Développeur fullstack JavaScript
+                                    (Node +
+                                    React)
+                                </div>
+                                <div>Mars 2015 - Décembre 2016</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            Développement d'un système d'automatisation de rapport. Schneider développait une
+                            application de gestion
+                            d'énergie. L'idée était de développer un ETL qui permettait de récupérer les données via des
+                            APIs REST,
+                            aggréger ces données et de les restituer au sein de rapports. L'ensemble de la solution
+                            était développée
+                            à l'aide de services node, dockerisés. J'avais également mis en place un front en React qui
+                            permettait de
+                            lancer la génération des rapports.
+                        </div>
+                    </li>
+                    <li>
+                        <div class="d-flex align-items-center">
+                            <img alt="Logo SFR" src="assets/img/sfr.png" width="80"/>
+                            <div class="ml-10">
+                                <div class="font-weight-bold mb-5">SFR - Développeur PHP</div>
+                                <div>Novembre 2014 - Mars 2015</div>
+                            </div>
+                        </div>
+                        <div class="mt-10 line-height-1-5">
+                            Au sein d'une équipe de trois développeurs, j'ai pris part au développement d'un outil de
+                            statistiques qui
+                            permettait à SFR d'étudier les données d'utilisation de ses applications mobiles. L'ensemble
+                            de la
+                            solution,
+                            déjà existante était développée en PHP, sans framework. L'application était vieillisante
+                            mais il fallait
+                            continuer à maintenir l'éxistant et développer de nouvelles fonctionnalités.
+                        </div>
+                    </li>
+                </ul>
             </div>
-            <div class="mt-10 line-height-1-5">
-              J'accompagne quelques étudiants qui souhaitent se former au développement web. Openclassroom à mis en
-              place différents <a class="text-blue link-unstyled" href="https://openclassrooms.com/paths"
-                                  target="_blank">parcours de formations</a> qui permettent à des étudiants par le biais
-              de projets de se
-              former au métier du développement. J'interviens sur tous les projets qui touchent au développement web
-              (Intégration HTML et CSS, JavaScript, PHP et Symfony).
-          </li>
-          <li class="mb-15">
-            <div class="d-flex align-items-center">
-              <img alt="Logo Biologic" src="assets/img/biologic.png" width="80"/>
-              <div class="ml-10">
-                <div class="font-weight-bold mb-5">Biologic - Développeur frontend (Angular 2+)</div>
-                <div>Août 2017 - Mai 2018</div>
-              </div>
-            </div>
-            <div class="mt-10 line-height-1-5">
-              Au sein d'une équipe de trois développeurs dédiés spécialement au développement frontend, nous avons
-              redéveloppé une
-              application existante développée précédemment en Delphi. L'objectif de l'application est de configurer et
-              monitorer des tests de charge sur des batteries. L'application a été intégralement développée avec Angular
-              2+. Nous avons paramétré Bootstrap 4 pour qu'il puisse correspondre aux spécifications fournies par le
-              cabinet design. Plotly.js a par ailleurs été utilisé pour la partie liée aux graphiques.
-            </div>
-          </li>
-          <li class="mb-15">
-            <div class="d-flex align-items-center">
-              <img alt="Logo Wizbii" src="assets/img/wizbii.svg" width="80"/>
-              <div class="ml-10">
-                <div class="font-weight-bold mb-5">Wizbii - Développeur frontend (Angular 1 & React)</div>
-                <div>Décembre 2016 - Juillet 2017</div>
-              </div>
-            </div>
-            <div class="mt-10 line-height-1-5">
-              En collaboration avec l'équipe backend et design, j'ai pris part à l'évolution de la plateforme <a
-              href="https://www.wizbii.com" class="text-blue link-unstyled" target="_blank">Wizbii</a>
-              ainsi que les produits annexes. Cela est passé par le développement d'un CMS maison avec un front en
-              React. Par la suite nous nous sommes chargés d'enrichir la plateforme Wizbii dont le front était à
-              l'époque développé avec Angular 1. Enfin nous avons développé une plateforme de recherche d'aides
-              financières destinée aux jeunes. Celle-ci était développée avec React & Redux. Le travail en collaboration
-              directe avec l'équipe design exigeait une rigueur importante au niveau de l'intégration.
-            </div>
-          </li>
-          <li class="mb-15">
-            <div class="d-flex align-items-center">
-              <img alt="Logo Schneider Electric" src="assets/img/schneider-electric.png" width="80"/>
-              <div class="ml-10">
-                <div class="font-weight-bold mb-5">Schneider Electric - Développeur fullstack JavaScript (Node +
-                  React)
+        </div>
+        <div class="section section-education" id="education">
+            <h2 class="section-title">Formation</h2>
+            <div>
+                <div class="timeline">
+                    <div class="graduation master">
+                        <div class="tooltip">
+                            Master MIAGE
+                            <div class="font-size-tiny mt-3">Université Joseph Fourrier (Grenoble)</div>
+                        </div>
+                        <div class="year font-weight-bold">2014</div>
+                    </div>
+                    <div class="graduation license">
+                        <div class="tooltip">
+                            Licence MIAGE
+                            <div class="font-size-tiny mt-3">Université Joseph Fourrier (Grenoble)</div>
+                        </div>
+                        <div class="year font-weight-bold">2012</div>
+                    </div>
+                    <div class="graduation dut">
+                        <div class="tooltip">
+                            DUT Informatique
+                            <div class="font-size-tiny mt-3">Université Pierre-Mendès-France (Grenoble)</div>
+                        </div>
+                        <div class="year font-weight-bold">2011</div>
+                    </div>
                 </div>
-                <div>Mars 2015 - Décembre 2016</div>
-              </div>
             </div>
-            <div class="mt-10 line-height-1-5">
-              Développement d'un système d'automatisation de rapport. Schneider développait une application de gestion
-              d'énergie. L'idée était de développer un ETL qui permettait de récupérer les données via des APIs REST,
-              aggréger ces données et de les restituer au sein de rapports. L'ensemble de la solution était développée
-              à l'aide de services node, dockerisés. J'avais également mis en place un front en React qui permettait de
-              lancer la génération des rapports.
-            </div>
-          </li>
-          <li>
-            <div class="d-flex align-items-center">
-              <img alt="Logo SFR" src="assets/img/sfr.png" width="80"/>
-              <div class="ml-10">
-                <div class="font-weight-bold mb-5">SFR - Développeur PHP</div>
-                <div>Novembre 2014 - Mars 2015</div>
-              </div>
-            </div>
-            <div class="mt-10 line-height-1-5">
-              Au sein d'une équipe de trois développeurs, j'ai pris part au développement d'un outil de statistiques qui
-              permettait à SFR d'étudier les données d'utilisation de ses applications mobiles. L'ensemble de la
-              solution,
-              déjà existante était développée en PHP, sans framework. L'application était vieillisante mais il fallait
-              continuer à maintenir l'éxistant et développer de nouvelles fonctionnalités.
-            </div>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="section section-education" id="education">
-      <h2 class="section-title">Formation</h2>
-      <div>
-        <div class="timeline">
-          <div class="graduation master">
-            <div class="tooltip">
-              Master MIAGE
-              <div class="font-size-tiny mt-3">Université Joseph Fourrier (Grenoble)</div>
-            </div>
-            <div class="year font-weight-bold">2014</div>
-          </div>
-          <div class="graduation license">
-            <div class="tooltip">
-              Licence MIAGE
-              <div class="font-size-tiny mt-3">Université Joseph Fourrier (Grenoble)</div>
-            </div>
-            <div class="year font-weight-bold">2012</div>
-          </div>
-          <div class="graduation dut">
-            <div class="tooltip">
-              DUT Informatique
-              <div class="font-size-tiny mt-3">Université Pierre-Mendès-France (Grenoble)</div>
-            </div>
-            <div class="year font-weight-bold">2011</div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="section section-gray section-publication" id="publication">
-      <h2 class="section-title">Publications</h2>
-      <div class="d-flex flex-wrap">
-        <a
-          href="https://www.codementor.io/michelre/functional-javascript-why-i-prefer-using-ramda-over-lodash-or-underscore-dzovysq11"
-          target="_blank"
-          class="publication publication-codementor">
-          <div class="publication-cover ramda-over-lodash"></div>
-          <div class="ramda-over-lodash"></div>
-          <div class="publication-description">
-            Une comparaison entre Lodash et Ramda, deux librairies qui permettent d'utiliser les opérateurs issus de la
-            programmation fonctionnelle en JavaScript.
-          </div>
-        </a>
-        <a href="https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv" target="_blank"
-           class="publication publication-codementor">
-          <div class="publication-cover curryfication-javascript"></div>
-          <div class="publication-description">
-            La curryfication est un principe important de la programmation fonctionnelle. Explication de ce que c'est et
-            comment l'utiliser à bon escient!
-          </div>
-        </a>
-        <a href="https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj" target="_blank"
-           class="publication publication-codementor">
-          <div class="publication-cover function-composition-in-js"></div>
-          <div class="function-composition-in-js"></div>
-          <div class="publication-description">
-            Issue de la programmtion fonctionnelle, La composition de fonction permet de combiner plusieurs
-            fonctions afin de produire une fonction plus complexe.
-          </div>
-        </a>
-        <a href="https://www.codementor.io/michelre/parcel-the-webpack-successor-fsmf6ow9y" target="_blank"
-           class="publication publication-codementor">
-          <div class="publication-cover parcel"></div>
-          <div class="parcel"></div>
-          <div class="publication-description">
-            Parcel est un module bundler au même titre que Webpack qui allie simplicité et rapidité. Alors Parcel
-            peut-il être le successeur de Webpack? A vous de vous faire une idée!
-          </div>
-        </a>
-        <a href="https://www.codementor.io/michelre/using-box-shadow-to-construct-a-border-ex0rpxvng" target="_blank"
-           class="publication publication-codementor">
-          <div class="publication-cover css-box-shadow"></div>
-          <div class="parcel"></div>
-          <div class="publication-description">
-            Un article dédié au CSS qui demistifie la création de bordures en utilisant la propriété box-shadow.
-          </div>
-        </a>
-        <a
-          href="https://openclassrooms.com/courses/developpez-vos-applications-web-avec-angularjs/qu-est-ce-qu-angularjs"
-          target="_blank"
-          class="publication publication-oc">
-          <div class="publication-cover angularjs"></div>
-          <div class="parcel"></div>
-          <div class="publication-description">
-            Un cours qui permet de se former à AngularJS en développant une application simple. Retour sur les notions
-            importantes du framework et son écosystème.
-          </div>
-        </a>
-      </div>
-    </div>
-    <div class="section section-contact" id="contact">
-      <h2 class="section-title">Contact</h2>
-      <div class="d-flex flex-wrap-reverse">
-        <div class="info">
-          <div class="mb-35">
-            <div class="d-flex align-items-center contact-info mb-10">
-              <img alt="Icône représentant l'adresse" src="assets/img/home-icon.svg" width="50" height="50" class="mr-10"/>
-              <div class="font-size-large text-uppercase">Adresse</div>
+        <div class="section section-gray section-publication" id="publication">
+            <h2 class="section-title">Publications</h2>
+            <div class="d-flex flex-wrap">
+                <a
+                    href="https://www.codementor.io/michelre/functional-javascript-why-i-prefer-using-ramda-over-lodash-or-underscore-dzovysq11"
+                    target="_blank"
+                    class="publication publication-codementor">
+                    <div class="publication-cover ramda-over-lodash"></div>
+                    <div class="ramda-over-lodash"></div>
+                    <div class="publication-description">
+                        Une comparaison entre Lodash et Ramda, deux librairies qui permettent d'utiliser les opérateurs
+                        issus de la
+                        programmation fonctionnelle en JavaScript.
+                    </div>
+                </a>
+                <a href="https://www.codementor.io/michelre/currying-in-javascript-g6212s8qv" target="_blank"
+                   class="publication publication-codementor">
+                    <div class="publication-cover curryfication-javascript"></div>
+                    <div class="publication-description">
+                        La curryfication est un principe important de la programmation fonctionnelle. Explication de ce
+                        que c'est et
+                        comment l'utiliser à bon escient!
+                    </div>
+                </a>
+                <a href="https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj"
+                   target="_blank"
+                   class="publication publication-codementor">
+                    <div class="publication-cover function-composition-in-js"></div>
+                    <div class="function-composition-in-js"></div>
+                    <div class="publication-description">
+                        Issue de la programmtion fonctionnelle, La composition de fonction permet de combiner plusieurs
+                        fonctions afin de produire une fonction plus complexe.
+                    </div>
+                </a>
+                <a href="https://www.codementor.io/michelre/parcel-the-webpack-successor-fsmf6ow9y" target="_blank"
+                   class="publication publication-codementor">
+                    <div class="publication-cover parcel"></div>
+                    <div class="parcel"></div>
+                    <div class="publication-description">
+                        Parcel est un module bundler au même titre que Webpack qui allie simplicité et rapidité. Alors
+                        Parcel
+                        peut-il être le successeur de Webpack? A vous de vous faire une idée!
+                    </div>
+                </a>
+                <a href="https://www.codementor.io/michelre/using-box-shadow-to-construct-a-border-ex0rpxvng"
+                   target="_blank"
+                   class="publication publication-codementor">
+                    <div class="publication-cover css-box-shadow"></div>
+                    <div class="parcel"></div>
+                    <div class="publication-description">
+                        Un article dédié au CSS qui demistifie la création de bordures en utilisant la propriété
+                        box-shadow.
+                    </div>
+                </a>
+                <a
+                    href="https://openclassrooms.com/courses/developpez-vos-applications-web-avec-angularjs/qu-est-ce-qu-angularjs"
+                    target="_blank"
+                    class="publication publication-oc">
+                    <div class="publication-cover angularjs"></div>
+                    <div class="parcel"></div>
+                    <div class="publication-description">
+                        Un cours qui permet de se former à AngularJS en développant une application simple. Retour sur
+                        les notions
+                        importantes du framework et son écosystème.
+                    </div>
+                </a>
             </div>
-            <div>91 Avenue de Claix</div>
-            <div>38180 Seyssins, FRANCE</div>
-          </div>
-          <div class="mb-35">
-            <div class="d-flex align-items-center contact-info mb-10">
-              <img alt="Icône représentant l'adresse mail" src="assets/img/mail-icon.svg" width="50" height="50" class="mr-10"/>
-              <div class="font-size-large text-uppercase">Contact</div>
-            </div>
-            <div>remi.michel38@gmail.com</div>
-          </div>
-          <div class="d-flex">
-            <a href="https://github.com/michelre" class="link-unstyled mr-50" target="_blank">
-              <img alt="Logo Github" src="assets/img/github-icon.svg" width="25" height="25"/>
-            </a>
-            <a href="https://www.linkedin.com/in/r%C3%A9mi-michel-bb191b64/" class="link-unstyled mr-50"
-               target="_blank">
-              <img alt="Logo Linkedin" src="assets/img/linkedin-icon.svg" width="25" height="25"/>
-            </a>
-            <a href="https://twitter.com/michelre38" class="link-unstyled mr-50" target="_blank">
-              <img alt="Logo Twitter" src="assets/img/twitter-icon.svg" width="25" height="25"/>
-            </a>
-          </div>
+        </div>
+        <div class="section section-contact" id="contact">
+            <h2 class="section-title">Contact</h2>
+            <div class="d-flex flex-wrap-reverse">
+                <div class="info">
+                    <div class="mb-35">
+                        <div class="d-flex align-items-center contact-info mb-10">
+                            <img alt="Icône représentant l'adresse" src="assets/img/home-icon.svg" width="50"
+                                 height="50" class="mr-10"/>
+                            <div class="font-size-large text-uppercase">Adresse</div>
+                        </div>
+                        <div>91 Avenue de Claix</div>
+                        <div>38180 Seyssins, FRANCE</div>
+                    </div>
+                    <div class="mb-35">
+                        <div class="d-flex align-items-center contact-info mb-10">
+                            <img alt="Icône représentant l'adresse mail" src="assets/img/mail-icon.svg" width="50"
+                                 height="50" class="mr-10"/>
+                            <div class="font-size-large text-uppercase">Contact</div>
+                        </div>
+                        <div>remi.michel38@gmail.com</div>
+                    </div>
+                    <div class="d-flex">
+                        <a href="https://github.com/michelre" class="link-unstyled mr-50" target="_blank">
+                            <img alt="Logo Github" src="assets/img/github-icon.svg" width="25" height="25"/>
+                        </a>
+                        <a href="https://www.linkedin.com/in/r%C3%A9mi-michel-bb191b64/" class="link-unstyled mr-50"
+                           target="_blank">
+                            <img alt="Logo Linkedin" src="assets/img/linkedin-icon.svg" width="25" height="25"/>
+                        </a>
+                        <a href="https://twitter.com/michelre38" class="link-unstyled mr-50" target="_blank">
+                            <img alt="Logo Twitter" src="assets/img/twitter-icon.svg" width="25" height="25"/>
+                        </a>
+                    </div>
 
+                </div>
+                <div class="contact-form flex-grow">
+                    <form>
+                        <div class="mb-10">
+                            <input name="name" type="text" class="form-control" placeholder="Votre nom"/>
+                        </div>
+                        <div class="mb-10">
+                            <input name="mail" type="text" class="form-control" placeholder="Votre email"/>
+                        </div>
+                        <div class="mb-10">
+                            <input name="subject" type="text" class="form-control" placeholder="Sujet"/>
+                        </div>
+                        <div class="mb-10">
+                            <div id="editor">
+                                <div id="toolbar"></div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end">
+                            <button class="form-control btn btn-primary btn-send">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
         </div>
-        <div class="contact-form flex-grow">
-          <form>
-            <div class="mb-10">
-              <input name="name" type="text" class="form-control" placeholder="Votre nom"/>
-            </div>
-            <div class="mb-10">
-              <input name="mail" type="text" class="form-control" placeholder="Votre email"/>
-            </div>
-            <div class="mb-10">
-              <input name="subject" type="text" class="form-control" placeholder="Sujet"/>
-            </div>
-            <div class="mb-10">
-              <div id="editor">
-                <div id="toolbar"></div>
-              </div>
-            </div>
-            <div class="d-flex justify-content-end">
-              <button class="form-control btn btn-primary btn-send">Envoyer</button>
-            </div>
-          </form>
-        </div>
-      </div>
     </div>
-  </div>
 </div>
 
 <div class="alert">
-  <div class="alert-message alert-success">
-    Merci pour votre demande. Je reviens vers vous dans les plus brefs délais!
-  </div>
-  <div class="alert-message alert-error">
-    Oups :( une petite erreur s'est produite. Merci de reéssayer un peu plus tard
-  </div>
+    <div class="alert-message alert-success">
+        Merci pour votre demande. Je reviens vers vous dans les plus brefs délais!
+    </div>
+    <div class="alert-message alert-error">
+        Oups :( une petite erreur s'est produite. Merci de reéssayer un peu plus tard
+    </div>
 </div>
 
 <script type="application/javascript" src="js/index.js"></script>
