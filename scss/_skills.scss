@@ -55,6 +55,14 @@
   content: "90%";
 }
 
+.level-95::after {
+  width: 95%;
+}
+
+.level-95::before {
+  content: "95%";
+}
+
 .level-80::after {
   width: 80%;
 }
