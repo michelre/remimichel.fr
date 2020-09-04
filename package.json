@@ -33,6 +33,6 @@
     "zenscroll": "^4.0.2"
   },
   "devDependencies": {
-    "node-sass": "^4.9.0"
+    "node-sass": "^4.13.1"
   }
 }
