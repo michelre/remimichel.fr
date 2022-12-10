@@ -25,7 +25,7 @@
     "body-parser": "^1.18.3",
     "compression": "^1.7.2",
     "dotenv": "^8.1.0",
-    "express": "^4.16.3",
+    "express": "^4.17.3",
     "node-mailjet": "^3.2.1",
     "nodemailer": "^4.6.5",
     "parcel-bundler": "^1.8.1",
